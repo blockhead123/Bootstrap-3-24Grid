@@ -1,0 +1,88 @@
+// Grid settings
+// -------------------------
+
+$main-sm-columns:       $grid-columns;
+$sidebar-sm-columns:    4;
+
+
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         #27ae60;
+
+$label-color:           #ef4136;
+
+
+// Glyphicons path
+// -------------------------
+
+$icon-font-path:        "../vendor/bootstrap-sass-official/assets/fonts/";
+
+
+@mixin make-buttons() {
+  background-color: #484848;
+  width: 100%;
+  border: 1px solid #484848;
+  display: block;
+  position: relative;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 11px;
+  text-decoration: none;
+}
+
+@mixin text-boxes(){
+  width: 100%;
+  color: #757575;
+  font-size: 14px;
+  padding: 13px;
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+}
+
+@mixin button1(){
+  width: 100%;
+  background-color: #EE4136;
+  border-radius: 5px;
+  border: 0px;
+  padding: 14px;
+  color: #fff;
+  &:hover{
+    background-color: #484848;
+  }
+}
+
+@mixin selExperts(){
+
+  background: #ef4136;
+  border-radius: 0 0 7px 7px;
+  font-size: 12px;
+  padding: 12px 9px 7px;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 170px;
+  float: right;
+  line-height: 1;
+  margin-top: -5px;
+  &:hover{
+    color: #000;
+    text-decoration: none;
+  }
+  span {
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    color: #696969;
+    font-weight: 600;
+    padding: 4px 7px;
+    line-height: 1.1;
+    margin-top: -6px;
+    float: right;
+  }
+}
